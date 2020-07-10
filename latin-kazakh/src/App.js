@@ -9,7 +9,7 @@ class App extends Component {
       <div className={classes.App}>
         <h1>
           <span role="img" aria-label="kz">
-            🇰🇿 Kazakh Cyrillic to Kazakh Latin Text Converter 🇰🇿
+            🇰🇿 <u>Cyrillic</u> to <u>Latin</u> Text Converter 🇰🇿
           </span>
         </h1>
         <Converter />

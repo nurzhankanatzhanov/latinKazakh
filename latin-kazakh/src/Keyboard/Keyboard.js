@@ -3,7 +3,7 @@ import classes from "./Keyboard.css";
 
 class Keyboard extends Component {
   render() {
-    return <div></div>;
+    return <div className={classes.Keyboard}></div>;
   }
 }
 

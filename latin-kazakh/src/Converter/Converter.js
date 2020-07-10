@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import classes from "./Converter.css";
 
 import TextArea from "./Textarea/Textarea";
+import Button from "./Button/Button";
 
 class Converter extends Component {
   state = {
@@ -12,6 +13,16 @@ class Converter extends Component {
     this.setState({
       text: event.target.value,
     });
+  };
+
+  clearInput = () => {
+    this.setState({
+      text: "",
+    });
+  };
+
+  copyToClipboard = () => {
+    navigator.clipboard.writeText(this.state.text);
   };
 
   render() {
@@ -26,6 +37,7 @@ class Converter extends Component {
             typing={(event) => this.textInputter(event)}
             value={this.state.text}
           />
+          <Button name="Clear" click={() => this.clearInput()} />
         </div>
         <div className={classes.half}>
           <label htmlFor="input_text">Output Text:</label>
@@ -34,6 +46,10 @@ class Converter extends Component {
             readonly={true}
             focus={false}
             value={this.state.text}
+          />
+          <Button
+            name="Copy to Clipboard"
+            click={() => this.copyToClipboard()}
           />
         </div>
       </div>
