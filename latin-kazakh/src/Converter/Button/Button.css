@@ -1,12 +1,21 @@
 .Button {
-  background-color: #1e8cba; /* Green */
+  display: inline-block;
+  background-color: #1e8cba;
   border: none;
   color: white;
   padding: 6px 20px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 20px;
   font-family: "Cormorant Garamond", serif;
   border: 1px solid white;
+  transition-duration: 0.4s;
+  margin-right: 30px;
+}
+
+.Button:hover {
+  cursor: pointer;
+  background-color: white; /* Green */
+  color: black;
+  border: 2px solid #065679;
 }
