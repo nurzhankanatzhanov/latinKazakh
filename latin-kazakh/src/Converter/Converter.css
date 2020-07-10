@@ -1,0 +1,19 @@
+.Converter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.half {
+  display: inline-block;
+  width: 50%;
+  margin: auto;
+}
+
+label {
+  font-size: x-large;
+}
