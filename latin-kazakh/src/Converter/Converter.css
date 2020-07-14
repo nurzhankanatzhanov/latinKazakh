@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 99%;
   margin: auto;
   text-align: center;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Alice", serif;
 }
 
 .half {
   display: inline-block;
-  width: 50%;
+  width: 99%;
   margin: auto;
   align-items: center;
 }
@@ -18,4 +18,17 @@
 label {
   font-size: x-large;
   text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Converter {
+    display: block;
+    margin: auto;
+  }
+
+  .half {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
 }
