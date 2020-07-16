@@ -1,6 +1,6 @@
 .Converter {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 99%;
   margin: auto;
@@ -10,14 +10,24 @@
 
 .half {
   display: inline-block;
-  width: 99%;
+  width: 100%;
   margin: auto;
-  align-items: center;
+  padding-bottom: 5%;
 }
 
 label {
   font-size: x-large;
   text-transform: uppercase;
+}
+
+.img {
+  border: 3px solid white;
+  transition-duration: 0.3s;
+}
+
+.img:hover {
+  border: 3px solid blue;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 1000px) {
